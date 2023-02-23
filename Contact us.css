@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .i{
+    color: transparent;
+  }
+  
+  /* NAVBAR */
+  
+  .navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0 0 9px;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+  }
+  
+  .navbar img {
+    height: 59px;
+    width: 247px;
+    margin-top: 9px;
+    margin-left: 526px;
+  }
+  
+  .social-nav {
+    float: right;
+    display: flex;
+  }
+  
+  .sidebar_menu {
+    position: fixed;
+    height: 100vh;
+    width: 220px;
+    left: -280px;
+    background-color: dodgerblue;
+    margin-top: -5px;
+    transition: all 0.3s linear;
+    z-index: 1000;
+  }
+  
+  .dropdown_menu {
+    display: none;
+    transition: all 0.3s linear;
+  }
+  
+  .menu ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 220px;
+    background: skyblue;
+    background-size: 8px;
+    height: 590px;
+    z-index: 34;
+    width: 173px;
+    transition: 0.3s;
+  }
+  
+  .dropdown_menu ul {
+    display: block;
+    margin: -9px;
+    margin-top: 177px;
+    margin-left: 4px;
+    transition: 0.3s;
+  }
+  
+  .dropdown_menu ul li {
+    width: 173px;
+    padding: 9px;
+    list-style-type: none;
+    margin-bottom: 8px;
+    text-align: center;
+    margin-left: -4px;
+    transition: 0.3s;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .dropdown_menu li a {
+    font-family: "Work Sans", sans-serif;
+    font-size: 19px;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 7px;
+    width: 100%;
+  }
+  
+  .menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all 0.3s linear;
+  }
+  
+  .menu i {
+    color: #000;
+    font-size: 20px;
+    padding-right: 8px;
+  }
+  
+  .menu a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .menu li:hover {
+    background-color: skyblue;
+    color: gray;
+  }
+  
+  .dropdown_menu li:hover {
+    background-color: aliceblue;
+  }
+  
+  .social_media {
+    position: absolute;
+    left: 43%;
+    bottom: -131px;
+    transform: translateX(-50%);
+  }
+  
+  .social_media i {
+    padding: 0 5px;
+    color: #000;
+    opacity: 0.5;
+    font-size: 20px;
+    transition: all 0.2s linear;
+  }
+  
+  .social_media i:hover {
+    opacity: 1;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .btn-one i {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    top: 5px;
+  }
+  
+  .btn-two i {
+    line-height: 60px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+    top: -66px;
+    left: 16px;
+    font-size: 30px;
+  }
+  
+  .btn-one i:hover {
+    font-size: 24px;
+    color: dodgerblue;
+  }
+  
+  .btn-two i:hover {
+    font-size: 24px;
+    color: dodgerblue;
+  }
+  
+  #check:checked ~ .sidebar_menu {
+    left: 0px;
+  }
+  
+  #check:checked ~ .btn-one I {
+    opacity: 0;
+  }
+  
+  #check:checked ~ .sidebar_menu .btn-two i {
+    opacity: 1;
+  }
+
+  /* TITLE-SECTION */
+
+.title-section {
+    background-color: grey;
+    height: 140px;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(/IMAGES/banner1.webp);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    50% {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(/IMAGES/banner2.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    75% {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(/IMAGES/banner3.webp);
+      background-attachment: fixed;
+      background-size: cover;
+    }
+  }
+  
+  .sub-title {
+    color: aliceblue;
+    margin-left: 130px;
+    margin-top: -6px;
+  }
+  
+  .sub-title a {
+    color: aliceblue;
+    text-decoration: none;
+  }
+  
+  .main-title {
+    text-align: center;
+  }
+  
+  .main-title h2{
+      color: aliceblue;
+      font-size: 40px;
+  }
+  
+
+  /* SECTION 1 */
+
+  .section-1{
+    height: 300px;
+  }
+
+  .Map{
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  /* SECTION 2 */
+
+  .section-2{
+    height: 100vh;
+    background: gainsboro;
+  }
+
+  .heading{
+    text-align: center;
+  }
+
+  .heading p{
+    font-size: 43px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .heading p strong{
+    font-size: 43px;
+    color: dodgerblue;
+    font-family: poppins;
+  }
+
+  .contact-form{
+    margin-top: 54px;
+    text-align: center;
+  }
+
+  .contact-form input{
+    width: 300px;
+    height: 42px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 15px;
+  }
+
+  .contact-form input :placeholder-shown{
+    font-style: italic;
+  }
+
+  .contact-form textarea{
+    border: none;
+    border-radius: 7px;
+    margin-top: 15px;
+  }
+
+  .send-btn {
+    background: dodgerblue;
+    height: 46px;
+    width: 143px;
+    border: none;
+    border-radius: 38px;
+    margin-left: 32px;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+ 
+  .send-btn a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: poppins;
+  }
+  
+  .send-btn:hover {
+    background-color: gray;
+    transform: translateY(-3px);
+  }
+
+  /* FOOTER */
+
+.footer {
+  height: 80vh;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.services-foot {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.services-foot h4 {
+  color: #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.services-foot li {
+  color: #ffffff;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.services-foot li::before {
+  content: "\2022";
+  color: grey;
+}
+
+.services-foot li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.services-foot li a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.quick-links-foot {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.quick-links-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.quick-links-foot li {
+  color: #ffffff;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.quick-links-foot li::before {
+  content: "\2022";
+  color: grey;
+}
+
+.quick-links-foot li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.quick-links-foot li a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contact-us-foot {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.contact-us-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.address {
+  color: grey;
+}
+
+.phone-number {
+  color: grey;
+}
+
+.phone-number a {
+  color: grey;
+  text-decoration: none;
+}
+
+.phone-number a:hover {
+  color: dodgerblue;
+}
+
+.email-foot a {
+  color: grey;
+  text-decoration: none;
+}
+
+.email-foot a:hover {
+  color: dodgerblue;
+}
+
+.client-email {
+  margin-left: -70px;
+  margin-top: 208px;
+}
+
+.client-email input {
+  width: 275px;
+  height: 45px;
+  background: gray;
+  border: none;
+  cursor: text;
+}
+
+.client-email input::placeholder {
+  color: lightgray;
+}
+
+.btn-email {
+  height: 45px;
+  width: 45px;
+  margin-left: -5px;
+  background: dodgerblue;
+  border: none;
+  margin-top: 0px;
+  transition: 0.3s;
+}
+
+.btn-email:hover {
+  background: darkgray;
+}
+
+.fa-envelope {
+  color: #ffffff;
+}
+
+.hr-foot {
+  margin-top: 80px;
+  width: 900px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 220px;
+}
+
+.rights {
+  margin-left: 230px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.social-links {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.social-links h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.social-links a {
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.fa-facebook-f {
+  color: #4d4d4d;
+}
+
+.fa-facebook-f:hover {
+  color: dodgerblue;
+}
+
+.fa-twitter {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-twitter:hover {
+  color: dodgerblue;
+}
+
+.fa-instagram {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-instagram:hover {
+  color: dodgerblue;
+}
+
+.fa-linkedin-in {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-linkedin-in:hover {
+  color: dodgerblue;
+}
+
+.Map-foot {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.Map-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}

@@ -1,0 +1,1513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0 0 9px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+.navbar img {
+  height: 59px;
+  width: 247px;
+  margin-top: 9px;
+  margin-left: 526px;
+}
+
+.social-nav {
+  float: right;
+  display: flex;
+}
+
+.sidebar_menu {
+  position: fixed;
+  height: 100vh;
+  width: 220px;
+  left: -280px;
+  background-color: dodgerblue;
+  margin-top: -5px;
+  transition: all 0.3s linear;
+  z-index: 1000;
+}
+
+.dropdown_menu {
+  display: none;
+  transition: all 0.3s linear;
+}
+
+.menu ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: 220px;
+  background: skyblue;
+  background-size: 8px;
+  height: 590px;
+  z-index: 34;
+  width: 173px;
+  transition: 0.3s;
+}
+
+.dropdown_menu ul {
+  display: block;
+  margin: -9px;
+  margin-top: 177px;
+  margin-left: 4px;
+  transition: 0.3s;
+}
+
+.dropdown_menu ul li {
+  width: 173px;
+  padding: 9px;
+  list-style-type: none;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: -4px;
+  transition: 0.3s;
+  border: none;
+  border-radius: 4px;
+}
+
+.dropdown_menu li a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 19px;
+}
+
+.menu {
+  position: absolute;
+  top: 7px;
+  width: 100%;
+}
+
+.menu li {
+  margin-top: 6px;
+  padding: 14px 20px;
+  transition: all 0.3s linear;
+}
+
+.menu i {
+  color: #000;
+  font-size: 20px;
+  padding-right: 8px;
+}
+
+.menu a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: skyblue;
+  color: gray;
+}
+
+.dropdown_menu li:hover {
+  background-color: aliceblue;
+}
+
+.social_media {
+  position: absolute;
+  left: 43%;
+  bottom: -131px;
+  transform: translateX(-50%);
+}
+
+.social_media i {
+  padding: 0 5px;
+  color: #000;
+  opacity: 0.5;
+  font-size: 20px;
+  transition: all 0.2s linear;
+}
+
+.social_media i:hover {
+  opacity: 1;
+}
+
+#check {
+  display: none;
+}
+
+.btn-one i {
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+  top: 5px;
+}
+
+.btn-two i {
+  line-height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+  top: -66px;
+  left: 16px;
+  font-size: 30px;
+}
+
+.btn-one i:hover {
+  font-size: 24px;
+  color: dodgerblue;
+}
+
+.btn-two i:hover {
+  font-size: 24px;
+  color: dodgerblue;
+}
+
+#check:checked ~ .sidebar_menu {
+  left: 0px;
+}
+
+#check:checked ~ .btn-one I {
+  opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn-two i {
+  opacity: 1;
+}
+
+/* SECTION 1 */
+
+.section-1 {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 640px;
+  animation: animate 16s ease-in-out infinite;
+  background-size: cover;
+  background-color: #000;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/IMAGES/slide1.jpg);
+    background-attachment: fixed;
+  }
+  25% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/IMAGES/slide2.png);
+    background-attachment: fixed;
+  }
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/IMAGES/slide3.webp);
+    background-attachment: fixed;
+  }
+  75% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url(/IMAGES/slide4.webp);
+    background-attachment: fixed;
+  }
+}
+
+.text-main {
+  text-align: center;
+  justify-items: center;
+}
+
+.text-main p {
+  color: none;
+}
+
+.text-main h1 {
+  color: #ffffff;
+  margin-top: 113px;
+  font-size: 57px;
+  font-family: poppins;
+}
+
+.text-main h2 {
+  margin-top: -18px;
+}
+
+.text-main-2 {
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 8px;
+  font-weight: 100;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.contact-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 143px;
+  border: none;
+  border-radius: 38px;
+  margin-left: -25px;
+  transition: 0.3s;
+}
+
+.contact-btn a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: poppins;
+}
+
+.contact-btn:hover {
+  background-color: gray;
+  transform: translateY(-3px);
+}
+
+.about-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 143px;
+  border: none;
+  border-radius: 38px;
+  margin-left: 32px;
+  transition: 0.3s;
+}
+
+.about-btn a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: poppins;
+}
+
+.about-btn:hover {
+  background-color: gray;
+  transform: translateY(-3px);
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  padding-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-2 h2 {
+  margin-top: 60px;
+  font-size: 38px;
+  color: gray;
+}
+
+.section-2 p {
+  padding: 32px;
+  margin-top: -7px;
+}
+
+.read-more-1 {
+  background: dodgerblue;
+  height: 46px;
+  width: 143px;
+  border: none;
+  border-radius: 38px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.read-more-1 a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: poppins;
+}
+
+.read-more-1:hover {
+  background-color: gray;
+  transform: translateY(-3px);
+}
+
+/* SECTION 3 */
+
+.section-3 {
+  padding-bottom: 77px;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.section-3 p {
+  color: gainsboro;
+}
+
+.hr-1 {
+  margin-top: 42px;
+  width: 64px;
+  margin-left: 91px;
+  height: 5px;
+  background: dodgerblue;
+}
+
+.section-3 h2 {
+  font-size: 43px;
+  margin-left: 87px;
+}
+
+.col {
+  margin-left: 160px;
+  margin-top: 56px;
+}
+
+.card {
+  width: 267px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 15px 35px;
+  background: url(/IMAGES/slide1.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.card h5 {
+  color: white;
+  font-size: 20px;
+}
+
+.card p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.card1 {
+  background-image: url(/IMAGES/slide4.webp);
+}
+.card2 {
+  background-image: url(/IMAGES/card2.jpg);
+}
+.card3 {
+  background-image: url(/IMAGES/card3.jpg);
+}
+.card4 {
+  background-image: url(/IMAGES/card4.png);
+}
+.card5 {
+  background-image: url(/IMAGES/card5.jpg);
+}
+.card6 {
+  background-image: url(/IMAGES/card6.jpg);
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+
+.card p a:hover {
+  color: dodgerblue;
+}
+
+/* SECTION 4 */
+
+.section-4 {
+  padding-bottom: 34px;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-4 h2 {
+  margin-top: 60px;
+  font-size: 38px;
+  color: lightslategrey;
+}
+
+.section-4 p {
+  padding: 32px;
+  margin-top: -7px;
+  color: #ffffff;
+}
+
+.i {
+  top: 0;
+  color: transparent;
+}
+
+/* SECTION 5 */
+
+.section-5 {
+  padding-bottom: 44px;
+  width: 100%;
+  background-color: gainsboro;
+}
+
+.section-5 h2 {
+  font-size: 43px;
+  margin-left: 87px;
+}
+
+.interested-btn {
+  background: none;
+  height: 31px;
+  width: 143px;
+  border: 1px solid grey;
+  transition: all 0.3s ease 0s;
+  margin-top: 30px;
+  margin-left: 63px;
+}
+
+.interested-btn a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: poppins;
+}
+
+.interested-btn:hover {
+  background-color: dodgerblue;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.image-box {
+  height: 200px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-2 {
+  background: #ffffff;
+  border-radius: 8px 8px 0 0;
+  width: 260px;
+  height: 294px;
+}
+
+.product-name {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: -28px;
+  margin-left: 10px;
+}
+.product-detail {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4d4d4d;
+  margin-left: 10px;
+}
+
+.slide-container {
+  max-width: 1120px;
+  width: 72%;
+  margin-top: 82px;
+}
+
+.swiper-button-next {
+  color: #000;
+  transition: 0.3s;
+}
+
+.swiper-button-next:hover {
+  color: grey;
+  transform: translateX(3px) translateY(3px);
+}
+
+.swiper-button-prev {
+  color: #000;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover {
+  color: #4d4d4d;
+  transform: translateX(3px) translateY(3px);
+}
+
+/* SECTION 6 */
+
+.section-6 {
+  padding-bottom: 44px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section-6 h2 {
+  margin-top: 50px;
+  font-size: 38px;
+  color: gray;
+}
+
+.section-6 p {
+  padding: 32px;
+  margin-top: -7px;
+  color: #000;
+}
+
+/* FOOTER */
+
+.footer {
+  height: 80vh;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.services-foot {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.services-foot h4 {
+  color: #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.services-foot li {
+  color: #ffffff;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.services-foot li::before {
+  content: "\2022";
+  color: grey;
+}
+
+.services-foot li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.services-foot li a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.quick-links-foot {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.quick-links-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.quick-links-foot li {
+  color: #ffffff;
+  margin-top: 4px;
+  list-style: none;
+}
+
+.quick-links-foot li::before {
+  content: "\2022";
+  color: grey;
+}
+
+.quick-links-foot li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.quick-links-foot li a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.contact-us-foot {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.contact-us-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.address {
+  color: grey;
+}
+
+.phone-number {
+  color: grey;
+}
+
+.phone-number a {
+  color: grey;
+  text-decoration: none;
+}
+
+.phone-number a:hover {
+  color: dodgerblue;
+}
+
+.email-foot a {
+  color: grey;
+  text-decoration: none;
+}
+
+.email-foot a:hover {
+  color: dodgerblue;
+}
+
+.client-email {
+  margin-left: -70px;
+  margin-top: 208px;
+}
+
+.client-email input {
+  width: 275px;
+  height: 45px;
+  background: gray;
+  border: none;
+  cursor: text;
+}
+
+.client-email input::placeholder {
+  color: lightgray;
+}
+
+.btn-email {
+  height: 45px;
+  width: 45px;
+  margin-left: -5px;
+  background: dodgerblue;
+  border: none;
+  margin-top: 0px;
+  transition: 0.3s;
+}
+
+.btn-email:hover {
+  background: darkgray;
+}
+
+.fa-envelope {
+  color: #ffffff;
+}
+
+.hr-foot {
+  margin-top: 80px;
+  width: 900px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 220px;
+}
+
+.rights {
+  margin-left: 230px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: lightgray;
+}
+
+.social-links {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.social-links h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.social-links a {
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.fa-facebook-f {
+  color: #4d4d4d;
+}
+
+.fa-facebook-f:hover {
+  color: dodgerblue;
+}
+
+.fa-twitter {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-twitter:hover {
+  color: dodgerblue;
+}
+
+.fa-instagram {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-instagram:hover {
+  color: dodgerblue;
+}
+
+.fa-linkedin-in {
+  color: #4d4d4d;
+  margin-top: 8px;
+}
+
+.fa-linkedin-in:hover {
+  color: dodgerblue;
+}
+
+.Map-foot {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.Map-foot h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 360px ) {
+  .navbar img {
+    height: 47px;
+    width: 198px;
+    margin-top: 14px;
+    margin-left: 91px;
+}
+.btn-one i {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+  top: 5px;
+}
+.btn-two i {
+  line-height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+  top: -66px;
+  left: 16px;
+  font-size: 18px;
+}
+.sidebar_menu {
+  position: fixed;
+  height: 91vh;
+  width: 220px;
+  background-color: dodgerblue;
+  margin-top: 2px;
+  transition: all 0.3s linear;
+  z-index: 1000;
+}
+.text-main h1 {
+  color: #ffffff;
+  margin-top: 113px;
+  font-size: 31px;
+  font-family: poppins;
+}
+.text-main-2 {
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 3px;
+  font-weight: 100;
+  font-size: 18px;
+}
+.contact-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 133px;
+  border: none;
+  border-radius: 38px;
+  margin-left: -7px;
+  transition: 0.3s;
+}
+.about-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 132px;
+  border: none;
+  border-radius: 38px;
+  margin-left: 32px;
+  transition: 0.3s;
+}
+.section-2 {
+ 
+  width: 100%;
+  text-align: center;
+}
+.section-3 {
+ 
+  width: 100%;
+  background-color: gainsboro;
+}
+.col {
+  margin-left: 10px;
+  margin-top: 36px;
+}
+.section-4 {
+
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-5 {
+ 
+  width: 100%;
+  background-color: gainsboro;
+  display: none;
+}
+.section-6 {
+
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-flex {
+  display: inline-grid;
+  text-align: center;
+}
+.services-foot {
+  margin-top: 30px;
+  margin-left: 0;
+}
+.quick-links-foot {
+  margin-top: 30px;
+  margin-left: 0;
+}
+.social-links {
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.social-links p {
+
+  margin-left: -27px;
+}
+.contact-us-foot {
+  margin-left: 14px;
+  margin-top: 30px;
+}
+.Map-foot {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.hr-foot {
+  margin-top: 80px;
+  width: 283px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 42px;
+}
+.rights {
+  margin-left: 50px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: lightgray;
+}
+
+}
+
+@media screen and (max-width: 376px) and (min-width: 361px) {
+  .btn-one i {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    top: 5px;
+}
+.navbar img {
+  height: 45px;
+  width: 202px;
+  margin-top: 16px;
+  margin-left: 80px;
+}
+.sidebar_menu {
+  position: fixed;
+  height: 90vh;
+  width: 220px;
+  left: -280px;
+  background-color: dodgerblue;
+  margin-top: 3px;
+  transition: all 0.3s linear;
+  z-index: 1000;
+}
+.btn-two i {
+  line-height: 60px;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  top: -66px;
+  left: 16px;
+  font-size: 22px;
+}
+.text-main h1 {
+  color: #ffffff;
+  margin-top: 113px;
+  font-size: 29px;
+  font-family: poppins;
+}
+.text-main-2 {
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 21px;
+}
+.buttons {
+  text-align: center;
+  margin-top: 78px;
+}
+.contact-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 132px;
+  border: none;
+  border-radius: 38px;
+  margin-left: -9px;
+  transition: 0.3s;
+}
+.about-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 132px;
+  border: none;
+  border-radius: 38px;
+  margin-left: 32px;
+  transition: 0.3s;
+}
+.section-2 {
+  height: 119vh;
+  width: 100%;
+  text-align: center;
+}
+.section-3 {
+  height: 275vh;
+  width: 100%;
+  background-color: gainsboro;
+}
+.col {
+  margin-left: 17px;
+  margin-top: 56px;
+}
+.section-4 {
+  height: 132vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-5 {
+  height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  display: none;
+}
+.section-6 {
+  height: 129vh;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-flex {
+  display: inline-grid;
+  text-align: center;
+}
+.services-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.quick-links-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.footer {
+  height: 214vh;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.social-links {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.contact-us-foot {
+  margin-left: 21px;
+  margin-top: 30px;
+}
+.Map-foot {
+  margin-left: 18px;
+  margin-top: 30px;
+}
+.hr-foot {
+  margin-top: 80px;
+  width: 272px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 48px;
+}
+.rights {
+  margin-left: 48px;
+  margin-top: 17px;
+  font-size: 11px;
+  color: lightgray;
+}
+
+}
+
+
+@media screen and (max-width: 394px) and (min-width: 376px) {
+  .navbar img {
+    height: 50px;
+    width: 220px;
+    margin-top: 13px;
+    margin-left: 82px;
+}
+.btn-one i {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s linear;
+  top: 5px;
+}
+.sidebar_menu {
+  position: fixed;
+  height: 93vh;
+  width: 220px;
+  left: -280px;
+  background-color: dodgerblue;
+  margin-top: 1px;
+  transition: all 0.3s linear;
+  z-index: 1000;
+}
+.social_media {
+  position: absolute;
+  left: 43%;
+  bottom: -243px;
+  transform: translateX(-50%);
+}
+.btn-two i {
+  line-height: 60px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s linear;
+  top: -66px;
+  left: 16px;
+  font-size: 22px;
+}
+.text-main h1 {
+  color: #ffffff;
+  margin-top: 113px;
+  font-size: 32px;
+  font-family: poppins;
+}
+.buttons {
+  text-align: center;
+  margin-top: 90px;
+}
+.contact-btn {
+  background: dodgerblue;
+  height: 47px;
+  width: 133px;
+  border: none;
+  border-radius: 38px;
+  margin-left: -2px;
+  transition: 0.3s;
+}
+
+.about-btn {
+  background: dodgerblue;
+  height: 47px;
+  width: 132px;
+  border: none;
+  border-radius: 38px;
+  margin-left: 32px;
+  transition: 0.3s;
+}
+.section-2 {
+  height: 89vh;
+  width: 100%;
+  text-align: center;
+}
+.section-3 {
+  height: 220vh;
+  width: 100%;
+  background-color: gainsboro;
+}
+.col {
+  margin-left: 25px;
+  margin-top: 56px;
+}
+.section-4 {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-5 {
+  height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  display: none;
+}
+.section-6 {
+  height: 98vh;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-flex {
+  display: inline-grid;
+  text-align: center;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.services-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.quick-links-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.social-links {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.contact-us-foot {
+  margin-left: 28px;
+  margin-top: 30px;
+}
+.Map-foot {
+  margin-left: 18px;
+  margin-top: 30px;
+}
+.hr-foot {
+  margin-top: 80px;
+  width: 272px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 48px;
+}
+.rights {
+  margin-left: 48px;
+  margin-top: 17px;
+  font-size: 11px;
+  color: lightgray;
+}
+}
+
+@media screen and (max-width: 530px) and (min-width: 394px) {
+  .btn-one i {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+    top: 5px;
+}
+.navbar img {
+  height: 59px;
+  width: 247px;
+  margin-top: 9px;
+  margin-left: 80px;
+}
+.text-main h1 {
+  color: #ffffff;
+  margin-top: 113px;
+  font-size: 31px;
+  font-family: poppins;
+}
+.text-main-2 {
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: 19px;
+}
+.buttons {
+  text-align: center;
+  margin-top: 86px;
+}
+.contact-btn {
+  background: dodgerblue;
+  height: 46px;
+  width: 143px;
+  border: none;
+  border-radius: 38px;
+  margin-left: -1px;
+  transition: 0.3s;
+}
+.section-2 {
+  height: 78vh;
+  width: 100%;
+  text-align: center;
+}
+.section-3 {
+  height: 202vh;
+  width: 100%;
+  background-color: gainsboro;
+}
+.col {
+  margin-left: 41px;
+  margin-top: 56px;
+}
+.section-4 {
+  height: 88vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-5 {
+  height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  display: none;
+}
+.section-6 {
+  height: 85vh;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.footer-flex {
+  display: inline-grid;
+  text-align: center;
+}
+.services-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.quick-links-foot {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.social-links {
+  margin-left: 0;
+  margin-top: 30px;
+}
+.contact-us-foot {
+  margin-left: 44px;
+  margin-top: 30px;
+}
+.Map-foot {
+  margin-left: 18px;
+  margin-top: 30px;
+}
+.hr-foot {
+  margin-top: 80px;
+  width: 272px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 48px;
+}
+.rights {
+  margin-left: 48px;
+  margin-top: 17px;
+  font-size: 11px;
+  color: lightgray;
+}
+
+}
+
+
+@media screen and (max-width: 822px) and (min-width: 530px) {
+  .navbar img {
+    height: 59px;
+    width: 247px;
+    margin-top: 9px;
+    margin-left: 263px;
+}
+.sidebar_menu {
+    position: fixed;
+    height: 111vh;
+    width: 220px;
+    left: -280px;
+    background-color: dodgerblue;
+    margin-top: -5px;
+    transition: all 0.3s linear;
+    z-index: 1000;
+}
+.menu li {
+  margin-top: 33px;
+  padding: 14px 20px;
+  transition: all 0.3s linear;
+}
+.menu a {
+  color: #000;
+  font-size: 27px;
+  text-decoration: none;
+}
+.social_media {
+  position: absolute;
+  left: 43%;
+  bottom: -281px;
+  transform: translateX(-50%);
+}
+.text-main h1 {
+    color: #ffffff;
+    margin-top: 111px;
+    font-size: 53px;
+    font-family: poppins;
+}
+.section-2 {
+  height: 46vh;
+  width: 100%;
+  text-align: center;
+}
+.col {
+  margin-left: 43px;
+  margin-top: 56px;
+}
+.section-3 {
+  height: 103vh;
+  width: 100%;
+  background-color: gainsboro;
+}
+.section-4 {
+  height: 55vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/IMAGES/section-4\ bg.avif);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section-5 {
+  height: 100vh;
+  width: 100%;
+  background-color: gainsboro;
+  display: none;
+}
+.section-6 {
+  height: 54vh;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.Map-foot {
+  margin-top: 367px;
+  display: none;
+}
+.hr-foot {
+  margin-top: 80px;
+  width: 535px;
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  margin-left: 166px;
+}
+.footer {
+  height: auto;
+  width: 100%;
+  background: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+}
+
